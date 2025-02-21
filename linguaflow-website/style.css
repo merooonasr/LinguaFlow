@@ -1,0 +1,132 @@
+/* تنسيقات فنية مبتكرة */
+:root {
+    --primary: #1b5854;
+    --secondary: #0a5b96;
+    --gradient: linear-gradient(135deg, #1778bd 0%, #15bfdd 50%, #1b5854 100%);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--gradient);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #fff, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass-box {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-box.highlight {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+}
+
+.audio-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 90%;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+}
+
+.neon-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.neon-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.neon-btn i {
+    font-size: 1.2em;
+}
+
+.progress-container {
+    flex-grow: 1;
+    margin: 0 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    transition: width 0.1s linear;
+}
+
+.time-display {
+    font-size: 0.9em;
+    color: #fff;
+    margin: 0 10px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.neon-select {
+    padding: 8px 30px 8px 15px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
